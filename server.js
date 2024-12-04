@@ -18,6 +18,9 @@ mongoose.connect(url)
 
 
 // Routes   
+app.get('/', (req, res) => {
+    res.send('Hello World')
+})
 
 app.use('/api/user', require('./routes/userRoute'));
 
